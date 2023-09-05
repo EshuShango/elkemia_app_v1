@@ -6,30 +6,17 @@
    - help me build an express server.
    - Im using vanilla js. 
 */
+"use strict"; 
 import express from "express";
 import { config } from "./api/config/config.env.js";
 import { createApp } from "./api/express_app.js";
-// import { connectDB } from "./db/connection";
-// import cors from "cors";
-// import compression from "compression";
-// import cookieParser from "cookie-parser";
-// import bodyParser from "body-parser";
-// import proxy from "express-http-proxy";
 
-// import maatPath from "@/api/routes/maatPath";
-// import { mTryCatch, AnpuSeal, ChaosHandler, chaosMethods} from "@/utils";
-
-//! THIS IS AN ISSUE !!!
-export const initMainServer = async () => {
+export async function initMainServer() {
   try {
-    // const APIgate = String(string) || Number(number) || config.serverPort;
-    const APIgate = Number() || config.serverPort || 3005 ;
+    const APIgate = (Number = config.serverPort) || 3005;
 
     const app = express();
-    // const router = await maatPath();
-    // Connect to the database
-    // console.log(config);
-    // await connectDB();
+
     await createApp(app);
 
     app.listen(APIgate, () => {
@@ -42,6 +29,6 @@ export const initMainServer = async () => {
       process.exit(1);
     }
   }
-};
+}
 
 initMainServer();
