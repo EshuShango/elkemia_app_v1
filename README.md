@@ -1,69 +1,59 @@
+# Kemia Elementall Gallery 🌍🔥💧🌪️✨
 
-# Vite Starter Template: Unveiling the Power of Vite 🌟🛠
+## Description 📝
 
-👋🏾 Welcome to the Vite Starter Template, a harmonious blend of Vite, Node.js, and Tailwind CSS. Created to serve as a foundational springboard for both novice and expert developers, this template is designed to accelerate the development process, from inception to deployment.
+Welcome to the Kemia Elementall Gallery! This project aims to create an immersive 3D gallery experience using Three.js to showcase alchemical elements. The gallery will feature interactive 3D models of each element, complete with detailed tooltips, all powered by a robust MongoDB-Express-NodeJS backend.
 
-## 📌 Features 
+## Tech Stack 🛠️
 
-### 🚀 Vite 
-Experience development like never before. Vite offers you an unparalleled speed for your build and development process. 
+- **Frontend**: Vanilla JavaScript, Three.js, TailWindCSS
+- **Backend**: Node.js, Express
+- **Database**: MongoDB
 
-### 📂 Client/Server Directories 
-The template comes pre-configured with separate directories for client-side (`/client`) and server-side (`/server`) development, giving you the structure you need to build Full-Stack applications.
+## Elements 🧪
 
-### 🎨 Tailwind CSS 
-With Tailwind CSS at your disposal, your styling workflow becomes a breeze. Create aesthetically pleasing designs with minimal effort.
+- **Fire (🔥) - Tetrahedron**: Represents the essence of heat and flame.
+- **Earth (🌍) - Square**: Symbolizes the foundation and stability.
+- **Water (💧) - Icosahedron**: Embodies the fluidity and adaptability of water.
+- **Wind (🌪️) - Octahedron**: Conveys the free nature of wind and air.
+- **Aether (✨) - Dodecagon**: Represents the unknown, often considered the fifth element binding all others.
 
-### ⚙️ Node.js and Express 
-The server-side directory is equipped with a basic Node.js and Express setup. Get your RESTful APIs up and running in no time.
+## Roadmap 🗺️
 
-## 🌱 Getting Started
+1. **Initialize Repo**
+   - Create GitHub repo with README and .gitignore.
+   
+2. **Setup Backend**
+   - Node.js, Express, and MongoDB schema.
+   
+3. **HTML Structure**
+   - `index.html` with placeholders.
+   
+4. **CSS Setup**
+   - TailWindCSS and custom styles.
 
-### 🛠 Prerequisites 
+5. **Three.js Scene**
+   - Basic scene, camera, renderer.
 
-Before diving into this project, ensure you have the following installed:
+6. **Prototype 3D Model**
+   - First alchemical element.
 
-- [Node.js](https://nodejs.org/)
-- [pnpm](https://pnpm.io/): Install it globally using `npm install -g pnpm`.
+7. **UI Components**
+   - Buttons and modal setup.
 
-### ⚙️ Installation Steps 
+8. **API Endpoints**
+   - RESTful routes for MongoDB.
 
-1. **Utilize the GitHub Template**: Navigate to the GitHub repository and click the "Use this template" button to generate your new project.
-2. **Clone Your New Repository**: 
-   ```bash
-   git clone https://github.com/EshuShango/vite_JS_temp
-   ```
-3. **Project Navigation**: 
-   ```bash
-   cd YourNewRepo
-   ```
-4. **Dependency Management**: 
-   ```bash
-   pnpm i
-   ```
+9. **Responsive Design**
+   - Media queries for mobile.
 
-### 🛠 Development Workflow
+10. **Initial Documentation**
+    - README and code comments.
 
-Kickstart your development environment with the following command:
-```bash
-pnpm dev
-```
-Your application will be accessible at `http://localhost:3000`.
+## Contributing 🤝
 
-- **🌳 Server-side Development**:
-  ```bash
-  cd server
-  pnpm dev
-  ```
-  The API will manifest at `http://localhost:4000`.
+no others...yet 
+## License 📄
 
-## 🤝 Contributing 
-
-We welcome your ingenious ideas, constructive issues, and thoughtful pull requests.
-
-## 📜 License 
-
-This project is open-source and available under the MIT License.
-
----
+This project is licensed under the MIT License.
 
