@@ -1,10 +1,12 @@
+"use strict";
 // import express, { Request, Response, NextFunction } from "express";
-import express from "express";
-// import {config}  from "./config/config.env.js";
-// import proxy from "express-http-proxy";
 // import { connectDB } from "./db/connection";
+import express from "express";
+import {config}  from "./config/config.env.js";
+import proxy from "express-http-proxy";
 import cors from "cors";
 import bodyParser from "body-parser";
+
 
 export async function createApp(app = express.application) {
   //* Database
@@ -26,7 +28,7 @@ export async function createApp(app = express.application) {
   //* Routes
   // app.use("/users", proxy(config.userUrl));
   // app.use("/auth", proxy(config.authUrl));
-  // app.use("/elements", proxy(config.el_Url));
+  app.use("/elements", proxy(config.el_Url));
   
   //* TEST:
   app.use("/", (req, res, next) => {
