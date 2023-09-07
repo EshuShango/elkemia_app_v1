@@ -1,6 +1,11 @@
 "use strict";
-// import express, { Request, Response, NextFunction } from "express";
-// import { connectDB } from "./db/connection";
+/* Hey Copilot!
+   - Your a senior developer and you know what you are doing.
+   - Im working on the Backend of the application.
+   - Im using a architecture pattern called Microservices.
+   - help me build an express server.
+   - Im using vanilla js. 
+*/
 import express from "express";
 import {config}  from "./config/config.env.js";
 import proxy from "express-http-proxy";

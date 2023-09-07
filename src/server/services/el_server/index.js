@@ -10,8 +10,6 @@ import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 
-// import { config } from "./api/config/config.env.js";
-// import { createApp } from "./api/express_app.js";
 
 const PORT = process.env.PORT || 8003;
 export async function initElementServer(app = express()) {
