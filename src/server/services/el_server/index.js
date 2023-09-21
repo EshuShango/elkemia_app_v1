@@ -23,7 +23,8 @@ export async function initElementServer(app = express()) {
         credentials: true,
       })
     );
-
+      //! Below we will add our route to the server. Which will serve the elements to the client.
+      
     app.use("/", (req, res, next ) => {
       return res.status(200).json({ message: "C🌏💧💨🔥 ElementalServer says Hello" });
     });
